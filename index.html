@@ -12,16 +12,11 @@
 <body>
     <div class="container">
         <h3>FWD Coding Test</h3>
-        <select id="select" onchange="handleCellSize()">
-            <option value="0">Select Board Size</option>
-            <option value="3">3x3</option>
-            <option value="4">4x4</option>
-            <option value="5">5x5</option>
-            <option value="6">6x6</option>
-            <option value="7">7x7</option>
-            <option value="8">8x8</option>
-            <option value="9">9x9</option>
-        </select>
+        <div class="form-board">
+        <input type="text" id="select"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="Board Size eg. 4"/>
+        <button onclick="handleCellSize()">Create Board</button>
+        </div>
+        
         <section>
             <div class="game--container">
 

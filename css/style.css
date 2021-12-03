@@ -53,3 +53,31 @@ section {
     box-shadow: 2px 2px 2px 2px #d86c23;
     border: 2px solid #d86c23;
 }
+
+.form-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.form-board button{
+   background-color: #5586e2;
+   color: #fff;
+   padding: 5px 10px;
+   border: 0px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: linear 0.05s;
+}
+
+.form-board button:hover{
+    transform: scale(1.05);
+ }
+
+.form-board input{
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 5px;
+ }
